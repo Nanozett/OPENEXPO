@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Создание мероприятии</title>
+</head>
+<body>
+     <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <img src="https://sun9-14.userapi.com/s/v1/if2/OX447YXdkHkvKfJRQBZtKvAL6vIL1L_PdX1rK-yTbhRZCXP6n0ICG4VImGuzrZ-I7Q1tnW7td_vfD-xAPEABxWUj.jpg?size=310x163&quality=95&type=album" align=”left” width="290" alt="Логотип команды">
+            <img src="https://sun9-5.userapi.com/s/v1/if2/Ebp597jCuJ7FtsuEvdoME3JHfsmc7UGujpG2S5HmU_ThdLQdv2kWoEDmfUCnRyB9aOMwNLwpWVT2TgrD_2Y8e58M.jpg?size=500x500&quality=95&type=album" align=”left” width="150" alt="Логотип команды">
+            <center>
+                <a style="font-family: impact;font-size: 25px" href="index.html">Главное</a>
+                <a style="font-family: impact;font-size: 25px" href="index2.html">Вход/Регистрация</a>
+                <a style="font-family: impact;font-size: 25px" href="index3.html">Мероприятия</a>
+                <a style="font-family: impact;font-size: 25px;" href="index4.html">Мой аккаунт</a>
+            </center>
+                
+                <hr>
+            </nav>
+        </div>
+    </div>
+</header>
+           
+                <center>
+                <h1>Создание мероприятии</h1>
+                <p>
+                    <label for="username" class="uname" data-icon="u" >Название</label>
+                    <input id="username" name="username" required="required" type="text" placeholder="Название мероприятии"/>
+                </p>
+                <p>
+                    <label for="password" class="youpasswd" data-icon="p">Описание</label>
+                    <input id="password" name="password" placeholder="Описание мероприятии" />
+                </p>
+                <p class="keeplogin">
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                    <label for="loginkeeping">Закрытая мероприятия</label>
+                    <div></div>
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                    <label for="loginkeeping">Открытая мероприятия</label>
+
+                </p>
+                <p class="signin button">
+                <button id="openDialog">Создать</button>
+                <dialog>
+                <p>Вы успешно зарегистрировались!</p>
+                <p><button id="closeDialog">Закрыть окно</button></p>
+                </dialog>
+                <script>
+                var dialog = document.querySelector('dialog');
+                document.querySelector('#openDialog').onclick = function() {
+                dialog.show();
+                }
+                document.querySelector('#closeDialog').onclick = function() {
+                dialog.close();
+                }
